@@ -6,6 +6,7 @@ public class Phone {
     private String model;
     private double weight;
 
+    // TODO: remove redundant comment - obviously these are constructors
     //constructors
     public Phone(String number, String model, double weight) {
         this(number, model);
@@ -20,6 +21,7 @@ public class Phone {
     public Phone() {
     }
 
+    // TODO: remove redundant comment - obviously these are getters and setters
     //getters and setters
     public String getNumber() {
         return number;
@@ -45,6 +47,7 @@ public class Phone {
         this.weight = weight;
     }
 
+    // TODO: remove redundant comment - obviously these are methods
     //methods
     void receiveCall(String name) {
         System.out.println("Calling " + name);

@@ -1,6 +1,8 @@
-package student_aspirant;
+package student_aspirant; // TODO: rename to studentaspirant
 
 public class Student {
+
+    // TODO: all fields can be final
     private String firstName;
     private String lastName;
     private String group;

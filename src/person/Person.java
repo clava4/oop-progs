@@ -1,6 +1,7 @@
 package person;
 
 public class Person {
+
     private String fullName;
     private int age;
 

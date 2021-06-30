@@ -1,11 +1,12 @@
 package phone;
 
 public class Main {
+
     public static void main(String[] args) {
 
-        Phone phone1 = new Phone("+380686594320", "Apple", 188);
-        Phone phone2 = new Phone("+380934465791", "Samsung");
-        Phone phone3 = new Phone();
+        final Phone phone1 = new Phone("+380686594320", "Apple", 188);
+        final Phone phone2 = new Phone("+380934465791", "Samsung");
+        final Phone phone3 = new Phone();
 
         phone2.setWeight(222);
 

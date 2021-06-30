@@ -16,6 +16,8 @@ public class Rectangle extends Shape {
 
     @Override
     void draw() {
-
+        // TODO: implement
     }
+
+    // TODO: add equals() method
 }

@@ -1,6 +1,7 @@
 package shapes;
 
 public class Circle extends Shape {
+
     private String dot1;
     private double radius;
 
@@ -12,6 +13,8 @@ public class Circle extends Shape {
 
     @Override
     void draw() {
-
+        // TODO: implement
     }
+
+    // TODO: add equals() method
 }
