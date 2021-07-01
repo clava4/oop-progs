@@ -1,9 +1,8 @@
-package student_aspirant;
+package studentaspirant;
 
 public class Aspirant extends Student {
 
-    // TODO: don't remember - private final
-    String work;
+    private final String work;
 
     public Aspirant(String firstName, String lastName, String group, double averageMark, String work) {
         super(firstName, lastName, group, averageMark);

@@ -1,12 +1,11 @@
-package student_aspirant; // TODO: rename to studentaspirant
+package studentaspirant;
 
 public class Student {
 
-    // TODO: all fields can be final
-    private String firstName;
-    private String lastName;
-    private String group;
-    private double averageMark;
+    final private String firstName;
+    final private String lastName;
+    final private String group;
+    final private double averageMark;
 
     public Student(String firstName, String lastName, String group, double averageMark) {
         this.firstName = firstName;

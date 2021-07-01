@@ -1,10 +1,12 @@
 package shapes;
 
+import java.util.Objects;
+
 public class Rectangle extends Shape {
-    private String dot1;
-    private String dot2;
-    private String dot3;
-    private String dot4;
+    final private String dot1;
+    final private String dot2;
+    final private String dot3;
+    final private String dot4;
 
     public Rectangle(String color, String dot1, String dot2, String dot3, String dot4) {
         super(color);
@@ -14,10 +16,40 @@ public class Rectangle extends Shape {
         this.dot4 = dot4;
     }
 
-    @Override
-    void draw() {
-        // TODO: implement
+    public String getDot1() {
+        return dot1;
     }
 
-    // TODO: add equals() method
+    public String getDot2() {
+        return dot2;
+    }
+
+    public String getDot3() {
+        return dot3;
+    }
+
+    public String getDot4() {
+        return dot4;
+    }
+
+    @Override
+    protected void draw() {
+        System.out.println("Draw rectangle with color: " + getColor() + ", and angular dots: " +
+                getDot1() + ", " + getDot2() + ", " + getDot3() + ", " + getDot4());
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Rectangle rectangle = (Rectangle) o;
+        return Objects.equals(dot1, rectangle.dot1) && Objects.equals(dot2, rectangle.dot2) &&
+                Objects.equals(dot3, rectangle.dot3) && Objects.equals(dot4, rectangle.dot4);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), dot1, dot2, dot3, dot4);
+    }
 }

@@ -1,4 +1,4 @@
-package student_aspirant;
+package studentaspirant;
 
 public class Main {
 
