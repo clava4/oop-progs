@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class Circle extends Shape {
 
-    final private String dot1;
-    final private double radius;
+    private final String dot1;
+    private final double radius;
 
     public Circle(String color, String dot1, double radius) {
         super(color);

@@ -3,10 +3,10 @@ package shapes;
 import java.util.Objects;
 
 public class Rectangle extends Shape {
-    final private String dot1;
-    final private String dot2;
-    final private String dot3;
-    final private String dot4;
+    private final String dot1;
+    private final String dot2;
+    private final String dot3;
+    private final String dot4;
 
     public Rectangle(String color, String dot1, String dot2, String dot3, String dot4) {
         super(color);

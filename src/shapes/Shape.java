@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public abstract class Shape {
 
-    final private String color;
+    private final String color;
 
     public Shape(String color) {
         this.color = color;
